@@ -31,7 +31,7 @@ SOFTWARE.
 # Current State of the project
 This launcher is actually not finished because I just started coding it !
 Obviously, it will take some time....
-It is at this moment available only in __French__.
+It is at this moment only available in __French__.
 
 # Functionnalities planned
 -Modern GUI which is HTML/CSS/JS based (WIP) <br>
