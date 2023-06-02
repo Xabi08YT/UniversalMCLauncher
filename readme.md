@@ -34,23 +34,23 @@ Obviously, it will take some time....
 It is at this moment available only in __French__.
 
 # Functionnalities planned
--Modern GUI which is HTML/CSS/JS based (WIP) \n
--Mojang Auth (Should be OK) \n
--Minecraft Profile manager (Planned) \n
--Multiple account support (WIP) \n
--Cracked Minecraft support (Planned) \n
--Multi OS support (Planned) \n
--Portable java install (Planned) \n
--Installer (Planned) \n
--Modpack support (Planned) \n
--Simple mod downloader/installer (Planned) \n
--Mod loader install (Planned) \n
--Auto Update (Planned) \n
--Wiki (Planned, obviously...) \n
--RSS feed from Mojang (Planned)\n
--Multi-Language (Planned) \n
+-Modern GUI which is HTML/CSS/JS based (WIP) <br>
+-Mojang Auth (Should be OK) <br>
+-Minecraft Profile manager (Planned) <br>
+-Multiple account support (WIP) <br>
+-Cracked Minecraft support (Planned) <br>
+-Multi OS support (Planned) <br>
+-Portable java install (Planned) <br>
+-Installer (Planned) <br>
+-Modpack support (Planned) <br>
+-Simple mod downloader/installer (Planned) <br>
+-Mod loader install (Planned) <br>
+-Auto Update (Planned) <br>
+-Wiki (Planned, obviously...) <br>
+-RSS feed from Mojang (Planned)<br>
+-Multi-Language (Planned) <br>
 
 # Functionnalities that may be planned
 
--Skin manager \n
--Idea from peaple :) \n
+-Skin manager <br>
+-Idea from peaple :) <br>
