@@ -1,5 +1,6 @@
 from mojang import client
-from json import dumps, load
+from json import dump, load
+from os import remove
 
 
 currentAccountProfile = None
@@ -17,6 +18,7 @@ def getAccountFromData():
 
 
 def recconectDefaultAccount():
+    global accounts
     accounts = getAccountFromData()
     for account in accounts:
         if accounts[account]["default"] == True:
@@ -34,3 +36,21 @@ def init():
     if out == None:
         return
     return out
+
+
+def addAccount(username, password, default = False):
+    try:
+        global currentAccountProfile
+        currentAccountProfile = getClientFromCredentials(username, password)
+        accounts[username]["username"] = username
+        accounts[username]["password"] = password
+        accounts[username]["default"] = default
+        remove("data/accounts.json")
+        with open(file='data/accounts.json') as accountsfile:
+            dump(accountsfile, accountsfile)
+            accountsfile.close()
+    except client.LoginFailure:
+        return "Le mot de passe ou le mail du compte est invalide. Veuillez réessayer."
+    except FileNotFoundError or FileExistsError or PermissionError as e:
+        print(e)
+        return "Impossible d'éditer le répertoire des comptes connectés. Vous restez tout de même connecté jusqu'à la fermeture du programme."
