@@ -1,8 +1,4 @@
-from tkinter import *
-from tkinter.ttk import *
-from screeninfo import get_monitors
+import webview
 
-class gui:
-    def __init__(self):
-        self.root = Tk()
-        self.root.geometry(str(self.root.winfo_screenwidth())+"x"+str(self.root.winfo_screenheight()))
+webview.create_window('Hello World', 'templates/main.html')
+webview.start()
