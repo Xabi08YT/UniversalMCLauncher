@@ -1,0 +1,115 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+p {
+    color: white;
+    font-size: large;
+}
+
+button {
+    font-size: large;
+}
+
+#main {
+    background-color: #303030;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 0px;
+    display:flex;
+    flex-direction: column;
+}
+
+#top {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    background-color: #252525;
+    padding: 10px;
+}
+
+#MC {
+    color: white;
+    float: left;
+    width: 25%;
+}
+
+#MC p {
+    margin-top: 1%;
+    margin-left: 2%;
+    font-size: xx-large;
+}
+
+#separator-top {
+    width: 50%;
+}
+
+#statusbar {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    height: 100%;
+}
+
+#statusbar p {
+    float: right;
+    margin-right: 10px;
+    color: white;
+    margin-top: 4%;
+}
+
+#below {
+    width: 100vh;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #252525;
+    width: 12%
+}
+
+.navbtn {
+    padding: 5px;
+    background-color: #252525;
+    border: none;
+    color: #FFFFFF;
+    height: 5%;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.navbtn:hover {
+    transition: 0.2s;
+    padding: 5px;
+    background-color: #000000;
+    border: none;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: 100%;
+}
+
+#actualites {
+    width: 100%;
+    height: 90%;
+}
+
+#launch {
+    height: 10%;
+    width: 100vh;
+    background-color: #282828;
+}
