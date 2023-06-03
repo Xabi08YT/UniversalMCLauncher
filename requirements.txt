@@ -1,2 +1,3 @@
-npm install electron@v25.0.1
-npm i python-shell
+webview
+minecraft-launcher-lib
+mojang

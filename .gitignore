@@ -2,3 +2,4 @@ PythonEnv\*
 data
 JRE
 Storage
+**/__pycache__/

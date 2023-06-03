@@ -43,7 +43,6 @@ def generateDefaultConfig():
                     "EnableRessourcepackFB": False,
                     "EnableShaderDL": False,
                     "EnableShaderFB": False,
-                    "EnableMCJarFB": True,
                 },
                 "StorageParams":
                 {
@@ -53,7 +52,6 @@ def generateDefaultConfig():
                     "RessourcepackFBPath": "AllResourcepacks/",
                     "ShaderFBPath": "AllShaders/",
                     "PathToConfigs": "AllGameVersion/",
-                    "MCJarFB": "MinecraftJars/"
                 }
             }
     with open(file="data/config.json", mode="a+") as cfg:
