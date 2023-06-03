@@ -2,6 +2,8 @@ from minecraft_launcher_lib.install import install_minecraft_version
 from wget import download
 from json import load
 from os import remove, path, getcwd
+from shutil import rmtree
+from time import sleep
 
 
 config = None
@@ -35,9 +37,9 @@ def create_instance(vid,instancename = None):
     else:
         storagePath = config["StorageParams"]["PathToStorage"]+config["Storage"]["PathToConfigs"]+instancename+"/"
     install_minecraft_version(vid, storagePath)
-    remove(path.join(storagePath, "runtime"))
-    if formatBuildDate(getBuildDate(vid)) > "202001171003520000":
-        with open(file="UseLastestJRE.param") as tmp:
+    rmtree(path.join(storagePath, "runtime"))
+    if formatBuildDate(getBuildDate(vid)) > 202001171003520000:
+        with open(file=storagePath+"UseLastestJRE.param", mode = "x") as tmp:
             tmp.close()
     
 
@@ -61,11 +63,14 @@ def getBuildDate(vid):
     return None
 
 
-def formatBuildDate(buildDate):
-    buildDate.replace("-",",")
-    buildDate.replace("T",",")
-    buildDate.replace(":",",")
-    buildDate.replace("+",",")
+def formatBuildDate(buildDate:str):
+    buildDate = buildDate.replace("-",",")
+    buildDate = buildDate.replace("T",",")
+    buildDate = buildDate.replace(":",",")
+    buildDate = buildDate.replace("+",",")
     buildDate = buildDate.split(",")
-    buildDate = int(buildDate[0]+buildDate[1]+buildDate[2])
+    print(buildDate)
+
+    buildDate = int(buildDate[0]+buildDate[1]+buildDate[2]+buildDate[3]+buildDate[4]+buildDate[5]+buildDate[6]+buildDate[7])
     return buildDate
+
