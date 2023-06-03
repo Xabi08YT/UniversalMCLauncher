@@ -45,6 +45,8 @@ def addAccount(username, password, default = False):
         accounts[username]["username"] = username
         accounts[username]["password"] = password
         accounts[username]["default"] = default
+        if default:
+            setDefaultAccount(username)
         remove("data/accounts.json")
         with open(file='data/accounts.json') as accountsfile:
             dump(accountsfile, accountsfile)
@@ -54,3 +56,12 @@ def addAccount(username, password, default = False):
     except FileNotFoundError or FileExistsError or PermissionError as e:
         print(e)
         return "Impossible d'éditer le répertoire des comptes connectés. Vous restez tout de même connecté jusqu'à la fermeture du programme."
+
+
+def setDefaultAccount(username):
+    for account in accounts:
+        if account == username:
+            accounts[account]["default"] = True
+        else:
+            accounts[account]["default"] = False
+    return
