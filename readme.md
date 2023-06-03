@@ -53,4 +53,4 @@ It is at this moment only available in __French__.
 # Functionnalities that may be planned
 
 -Skin manager <br>
--Idea from peaple :) <br>
+-Idea from people :) <br>
