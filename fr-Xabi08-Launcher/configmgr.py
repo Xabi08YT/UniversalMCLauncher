@@ -26,7 +26,6 @@ def generateDefaultConfig():
                 {
                     "Xmx":1024,
                     "Xms":500,
-                    "DefaultJREPath":"JRE/Java18/java.exe",
                     "StartMCFullscreen": False, 
                     "Defaultwidth": None, 
                     "DefaultHeight": None
@@ -43,6 +42,7 @@ def generateDefaultConfig():
                     "EnableRessourcepackFB": False,
                     "EnableShaderDL": False,
                     "EnableShaderFB": False,
+                    "EnableTerminalOutput": False,
                 },
                 "StorageParams":
                 {

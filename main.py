@@ -1,4 +1,4 @@
-Launcher = __import__("fr-Xabi08-Launcher", locals(), globals(), ["gui","configmgr","mojangConnect","versionDownloader"])
+Launcher = __import__("fr-Xabi08-Launcher", locals(), globals(), ["gui","configmgr","mojangConnect","versionDownloader","minecraftLaunch"])
 from os import getcwd
 
 
@@ -12,7 +12,8 @@ def init():
     Launcher.versionDownloader.APP_PATH = APP_PATH
     Launcher.versionDownloader.init()
     Launcher.versionDownloader.config = config
-    Launcher.versionDownloader.create_instance("1.16.1")
+    Launcher.minecraftLaunch.config = config
+    Launcher.minecraftLaunch.init()
     Launcher.gui.initGUI()
 
 init()
