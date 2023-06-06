@@ -36,7 +36,7 @@ def init():
     return
 
 
-def launchInstance(instanceName):
+def launchInstance(instanceName, username, uuid=None, token=None):
     minecraft_directory = path.join(config["StorageParams"]["PathToStorage"],config["StorageParams"]["PathToConfigs"],instanceName)
 
     try:
@@ -47,9 +47,9 @@ def launchInstance(instanceName):
         excPath = JRE8_EXEC_PATH
     
     options = {
-        "username": "Xabi08",
-        "uuid": "None",
-        "token": "None",
+        "username": username,
+        "uuid": uuid,
+        "token": token,
         "executablePath": excPath
     }
 
