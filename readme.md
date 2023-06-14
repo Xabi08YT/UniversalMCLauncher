@@ -1,3 +1,7 @@
+# PROJECT IS PAUSED
+
+This project has been paused until I come back from vacation in 3 months.
+
 # What is UniversalMCLauncher ?
 UniversalMCLauncher is a python launcher that support cracked player and is meant to run on any device (phones excluded).
 It is also meant to be portable which mean that you should be able to take this launcher on a usb stick.
